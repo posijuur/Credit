@@ -1,0 +1,109 @@
+@media screen and (max-width: 755px) {
+  .sprite-sprite, .contact_sprite, .contacts_sprite1, .contacts_sprite2, .contacts_sprite3 {
+    background-image: url('../img/../img/sprite-scf8c1eeae3.png');
+    background-repeat: no-repeat;
+  }
+
+  .footer {
+    background-image: url(../img/footer.jpg);
+    background-size: cover;
+    height: 261px;
+  }
+
+  .footerWrap {
+    margin: 0 auto;
+    width: 480px;
+  }
+
+  .contact {
+    width: 480px;
+    height: 330px;
+    background-color: #108100;
+    box-shadow: 0 2px 4px rgba(51, 51, 51, 0.35);
+    margin: -30px 0px 0 0;
+    text-align: left;
+    position: relative;
+    top: 262px;
+  }
+  .contact_sprite {
+    display: block;
+    background-position: 0 -1248px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 3%;
+    top: 77%;
+  }
+
+  .contacts {
+    color: white;
+  }
+  .contacts_item1 {
+    font-size: 34px;
+    margin: 30px 0 0 23px;
+    font-family: 'HelveticaNeueCyr-Bold';
+    padding: 30px 0 0 0;
+  }
+  .contacts_item2 {
+    font-size: 17px;
+    padding: 18px 0 0 57px;
+    width: 330px;
+    font-family: 'HelveticaNeueCyr-Roman';
+  }
+  .contacts_item3 {
+    color: #c0eeba;
+    font-size: 18px;
+    padding: 18px 0 0 57px;
+    font-family: 'HelveticaNeueCyr-Light';
+  }
+  .contacts_item4 {
+    font-size: 22px;
+    padding: 18px 0 0 57px;
+    font-family: 'HelveticaNeueCyr-Medium';
+  }
+  .contacts_link {
+    display: block;
+    line-height: 25px;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #ffd800;
+    width: 160px;
+    text-align: center;
+    margin: 9px 0 0 0;
+    font-family: 'HelveticaNeueCyr-Roman';
+  }
+  .contacts_item5 {
+    color: #3cb92a;
+    font-size: 14px;
+    margin: 40px 0 0 24px;
+    width: 220px;
+    font-family: 'HelveticaNeueCyr-Light';
+  }
+  .contacts_sprite1 {
+    display: block;
+    background-position: 0 -863px;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    left: 6%;
+    top: 30%;
+  }
+  .contacts_sprite2 {
+    display: block;
+    background-position: 0 -1105px;
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    left: 6%;
+    top: 46%;
+  }
+  .contacts_sprite3 {
+    display: block;
+    background-position: 0 -1127px;
+    width: 10px;
+    height: 16px;
+    position: absolute;
+    left: 6%;
+    top: 63%;
+  }
+}

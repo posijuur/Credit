@@ -1,0 +1,271 @@
+@media screen and (max-width: 755px) {
+@import "compass/utilities/sprites";
+$sprite-spacing: 10px;				
+@import "../img/sprite/*.png";
+
+	.header {
+		background-color: #0c6400;
+		font-family: 'HelveticaNeueCyr-Medium';
+	}
+	.headerWrap{
+		width: 480px;
+		margin: 0 auto;		
+	}
+	.model{
+		position: absolute;
+		background-color: rgba(1,1,1, 0.5);
+		width: 100%;
+		height: 100%;
+		z-index: 99999;
+		display: none;
+	}
+	.menu{
+		background-color: #fff;
+		width: 355px;
+	    height: 842px;
+	    float: right;
+	    margin: 0 4px 0 0;
+		&_x{
+			display: block;
+		    float: right;
+		    margin: 9px 12px 0 0px;
+		    font-size: 56px;
+		    font-family: 'HelveticaNeueCyr-Light';
+		    color:black;
+		}
+	}
+	.lists{
+		margin: 113px 0 168px 0;
+		font-family: 'HelveticaNeueCyr-Medium';		
+		&_item{
+			
+		}
+		&_link{
+			display: block;			
+			color:black;
+			padding: 12px 0 12px 24px;
+			border-bottom: 1px solid #eee;
+			&:hover{
+				background-color: #ffd800;
+			}
+		}
+		&_last{
+			border:none;
+		}
+	}
+	.cont{
+		margin: auto;
+    	width: 249px;
+		font-family: 'HelveticaNeueCyr-Roman';
+		position: relative;
+		&_link{
+			display: block;
+		    background-color: #ffd800;
+		    width: 129px;
+		    font-size: 15px;
+		    text-align: center;
+		    line-height: 26px;
+		    font-family: 'HelveticaNeueCyr-Roman';
+		    margin: 13px 0 100px 0;
+		}	
+		&_item1{
+			color:#2700ff;
+			margin: 0 0 25px 0;
+		}
+		&_sprite1{
+			@include sprite-sprite(adress);
+			display: block;
+			width: 10px;
+			height: 16px;
+			position: absolute;
+			top: 3%;
+    		left: -12%;
+
+		}
+		&_item2{
+			color:#2700ff;
+			margin: 0 0 25px 0;
+		}
+		&_sprite2{
+			@extend .cont_sprite1;
+			@include sprite-sprite(mail);
+			width: 16px;
+			top: 21%;
+			left: -13%;
+		}
+		&_item3{
+			font-family: 'HelveticaNeueCyr-Bold';
+			font-size: 19px;
+		}
+		&_sprite3{
+			@extend .cont_sprite1;
+			@include sprite-sprite(phone);
+			top: 41%;
+		}
+		&_item4{
+			font-size: 13px;
+		    color: gray;
+		    width: 210px;
+		    margin: 0 0 0 -30px;			
+		}
+	}
+	.list_item{
+			display: none;
+			line-height: 50px;
+	}
+	.planshet{		
+		display: inline-block;
+		color:#fff;	
+		line-height: 29px;
+		font-size: 18px;
+		font-family: 'HelveticaNeueCyr-Roman';
+		margin: 0 0 0 33px;
+		position: relative;
+		width: 360px;
+		&_sprite{
+			@include sprite-sprite(adress);
+			display: block;
+			width: 10px;
+			height: 16px;
+			position: absolute;
+    		top: 37%;
+    		left: -5%;
+		}
+	}
+	.btnMenu{
+		@include sprite-sprite(menu);
+		display: inline-block;
+	    width: 40px;
+	    height: 25px;
+	    float: right;
+    	margin: 17px 15px 0 0;
+	}
+
+	.section{
+		background-color: #108100;
+		font-family: 'HelveticaNeueCyr-Medium';		
+	}
+	.sectionWrap{
+		width: 480px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.money{
+		background-image: url(../img/Money.png);
+		width: 480px;
+		height: 633px;
+		position: absolute;
+		left: -478px;
+    	top: 48%;
+	}
+	.zalog{
+	}
+	.phone{
+		float: right;
+		&_number{
+			display: inline-block;
+			width: 279px;
+    		margin: 12px 0 26px 0px;
+			color: white;
+			font-size: 26px;
+			background-position: 33px -1119px;
+			position: relative;
+		}
+		&_butn{
+			display: inline-block;
+			text-align: center;
+			width: 155px;
+			border: 2px solid #ffd800;
+			color: white;
+			font-size: 16px;
+			line-height: 29px;
+    		margin: 24px 15px 0px -15px;
+			font-family: 'HelveticaNeueCyr-Roman';
+			vertical-align: top;
+		}
+		&_sity{
+			display: none;
+		}
+		&_code{
+			display: block;
+		}
+		&_sprite{
+			@include sprite-sprite(phone);
+			display: block;
+			width: 10px;
+			height: 16px;
+			position: absolute;
+		    top: 32%;
+		    left: -7%;
+		}
+	}
+	.bigText{
+		margin: 0 0 0 4px;
+		font-family: 'HelveticaNeueCyr-Bold';
+		text-align: center;
+		&_text{
+			color: white;
+			font-size: 29px;
+			line-height: 41px;
+		}
+		&_yellow{
+			color: #ffd800;
+			font-size: 56px;
+    		line-height: 44px;
+		}
+		&_roman{
+			float: right;
+			font-size: 24px;
+    		margin: -14px 65px 0 0;
+			font-family: 'HelveticaNeueCyr-Roman';
+		}
+	}
+	.deposit{
+		margin: 47px 0 19px 0;
+	}
+	.dep{
+		&_item{
+			display: inline-block;
+			color: white;
+			font-size: 18px;
+			text-transform: uppercase;
+			width: 110px;
+			padding: 0 0 0 96px;
+   			margin: 0 0 14px 0;
+		}
+		&_green{
+			color: #44e72d;
+			font-size: 15px;
+			font-family: 'HelveticaNeueCyr-Light';
+		}
+		&_sprite1{
+			@include sprite-sprite(car);
+			background-position: 23px -889px;
+			height: 60px;
+		}
+		&_sprite2{
+			@include sprite-sprite(home);
+			background-position: 27px -960px;
+			height: 60px;
+		}
+		&_sprite3{
+			@include sprite-sprite(vehicle);
+			background-position: 23px -1153px;
+   			height: 64px;
+		}
+		&_sprite4{
+			@include sprite-sprite(leasing);
+			background-position: 31px -1030px;
+			height: 65px;
+			width: 160px;
+    		padding: 0 0 0 94px;
+		}
+	}
+	.calc{
+		width: 380px;
+		height: 779px;
+		background-color: white;
+	}
+
+
+} 
